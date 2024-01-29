@@ -19,7 +19,6 @@ async function handler(req) {
         let fileInfo = {};
         try {
             fileInfo = await Deno.stat(`${Deno.cwd()}${path}`);
-            console.log(fileInfo);
         } catch (error) {
             console.error(`Error reading file info for ${path}:`, error);
         }
