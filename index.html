@@ -9,34 +9,18 @@
 
 <body>
 
-  <section id="cover">
-    <img
-      src="images/cv_photo.jpg"
-      alt="** a photo of me **"
-      width="356"
-      height="500" />
-    <h1>Jiri Simell</h1>
-    <h2>About Me</h2>
-    <p>I am ...</p>
-    <div>
-      <h2>Links</h2>
-      <p>LinkedIn: <a
-          href="https://www.linkedin.com/in/jiri-simell-006b42207/">https://www.linkedin.com/in/jiri-simell-006b42207/</a>
-      </p>
-      <p>GitHub: <a href="https://github.com/jsimell">https://github.com/jsimell</a></p>
-    </div>
-  </section>
-
-  <section id="contactInfo">
-    <h2>Contact Information</h2>
-    <ul>
-      <li>Address: Työpajankatu 4 A 7, 00580, Helsinki</li>
-      <li>E-mail: jiri.simell@gmail.com</li>
-      <li>Phone: 044 551 0905</li>
-    </ul>
-  </section>
+<header>
+    <img src="favicon.ico" alt="** site icon **" width="70" height="70" />
+      <h1>Jiri Simell</h1>
+      <nav id="navbar">
+        <ul>
+          <li><a href="/">Home</a></li>
+        </ul>
+    </nav>
+</header>
 
   <section id="mainContent">
+    <include src="templates/home.html"></include>
     <include src="templates/workExperience.html"></include>
     <include src="templates/education.html"></include>
     <include src="templates/itSkills.html"></include>
