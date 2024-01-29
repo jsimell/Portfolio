@@ -1,0 +1,2 @@
+# A single page CV web application with vanilla techniques
+This project is my first complete web development project. I wanted to do this project because I wanted to get a good grasp of vanilla Javascript, HTML, and CSS, before delving deeper into more advanced frameworks. My previous web development experience before this project was one web software development course in my university, where the techniques that were used were not vanilla. Thus, this project is a good learning experience for me.
