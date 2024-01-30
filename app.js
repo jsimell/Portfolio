@@ -20,7 +20,11 @@ async function handler(req) {
         try {
             fileInfo = await Deno.stat(`${Deno.cwd()}${path}`);
         } catch (error) {
-            console.error(`Error reading file info for ${path}:`, error);
+            return new Response("404 Not Found", {
+                headers: {
+                    status: 404,
+                }
+            });
         }
  
         if (fileInfo.isDirectory) {
@@ -68,12 +72,6 @@ async function handler(req) {
                 return new Response(file, {
                     headers: {
                         "content-type": "image/png",
-                    }
-                });
-            } else if (/\.ico$/.test(filename)) {
-                return new Response(file, {
-                    headers: {
-                        "content-type": "image/vnd.microsoft.icon",
                     }
                 });
             } else if (/\.ico$/.test(filename)) {
