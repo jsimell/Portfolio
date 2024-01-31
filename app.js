@@ -10,9 +10,9 @@ async function handler(req) {
     if (method ==  "GET") {
 
         // Get information on the requested resource
-        let fileInfo = {};
+        let pathInfo = {};
         try {
-            fileInfo = await Deno.stat(`${Deno.cwd()}${path}`);
+            pathInfo = await Deno.stat(`${Deno.cwd()}${path}`);
         } catch (error) {
             return new Response("404 Not Found", {
                 headers: {
@@ -20,8 +20,8 @@ async function handler(req) {
                 }
             });
         }
- 
-        if (fileInfo.isDirectory) {
+
+        if (pathInfo.isDirectory) {
 
             // GET /
             if (path == "/") {
@@ -31,9 +31,15 @@ async function handler(req) {
                         "content-type": "text/html; charset=utf-8",
                     }
                 });
+            } else {
+                return new Response("404 Not Found", {
+                    headers: {
+                        status: 404,
+                    }
+                });
             }
 
-        } else if (fileInfo.isFile) {
+        } else if (pathInfo.isFile) {
 
             // Read the requested file
             const file = await Deno.readFile(`${Deno.cwd()}${path}`);
@@ -76,6 +82,11 @@ async function handler(req) {
                 });
             }
         }
+        return new Response("404 Not Found", {
+            headers: {
+                status: 404,
+            }
+        });
     }
 }
 
