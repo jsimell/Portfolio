@@ -1,9 +1,3 @@
-// Get the names of the files in the templates folder (used in routing)
-const templates = [];
-for await (const dirEntry of Deno.readDir("templates")) {
-    templates.push(dirEntry.name);
-}
-
 // This is the main routing function that is called for each incoming request
 async function handler(req) {
     const method = req.method;
