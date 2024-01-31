@@ -45,7 +45,7 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-image: url("images/home_bg.png");
+    background-image: url("/images/home_bg.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
