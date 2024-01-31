@@ -6,4 +6,3 @@ Array.from(includes).forEach(async include => {
     include.insertAdjacentHTML('afterend', await res.text());
     include.remove(); // removes the 'include' element from the document as it is no longer needed after the content has been included
 });
-console.log("includeScript.js executed.");
