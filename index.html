@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <title>Jiri Simell</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap" rel="stylesheet">
-  </head>
+<head>
+  <title>Jiri Simell</title>
+  <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&display=swap" rel="stylesheet">
+</head>
 
-  <body>
+<body>
 
-    <header>
-      <include src="templates/header.html"></include>
-    </header>
+  <header id="header">
+    <include src="templates/header.html"></include>
+  </header>
 
-    <section id="home">
-      <include src="templates/home.html"></include>
-    </section>
-  
-    <section id="mainContent">
-      <section id="about">
-        <include src="templates/about.html"></include>
-      </section>
-      <section id="itSkills">
-        <include src="templates/itSkills.html"></include>
-      </section>
-      <section id="education">
-        <include src="templates/education.html"></include>
-      </section>
-      <section id="projects">
-        <include src="templates/projects.html"></include>
-      </section>
-    </section>
+  <section id="home">
+    <include src="templates/home.html"></include>
+  </section>
 
-    <footer>
-      <include src="templates/footer.html"></include>
-    </footer>
+  <section id="about">
+    <div id="aboutColumn1">
+      <include src="templates/about.html"></include>
+    </div>
+    <div id="aboutColumn2">
+      <include src="templates/itSkills.html"></include>
+      <include src="templates/education.html"></include>
+    </div>
+  </section>
 
-    <script src="/js/includeScript.js"></script>
-    <script src="/js/scrollToElement.js"></script>
+  <section id="projects">
+    <include src="templates/projects.html"></include>
+  </section>
 
-  </body>
+  <footer>
+    <include src="templates/footer.html"></include>
+  </footer>
+
+  <script src="/js/includeScript.js"></script>
+  <script src="/js/scrollToElement.js"></script>
+
+</body>
 
 </html>
