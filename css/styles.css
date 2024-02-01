@@ -1,18 +1,60 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0px;
+
+/* Styling of basic elements*/
+
+html {
+    scroll-behavior: smooth;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Chakra Petch', 'Tahoma', sans-serif;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+
+
+/* Styling of classes used in multiple sections */
+
+.defaultButton {
+    width: 8vw;
+    height: 5.5vh;
+    border-radius: 10px; 
+    background-color: rgb(7, 85, 55);
+    color: white;
+    box-shadow: 0 0 1vh 0 rgba(60, 60, 60, 0.5);
+    border: none;
+    font-size: 1.2rem;
+    text-wrap: nowrap;
+    cursor: pointer;
+    transition: color 0.15s ease-in-out;
+}
+
+.defaultButton:hover {
+    color: rgb(7, 85, 55);
+    background-color: white;
+    border: 2px solid rgb(7, 85, 55);
+}
+
+
+
+/* Styling of header contents */
+
 header {
+    position: fixed;
+    z-index: 1;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(7, 85, 55);
     color: white;
-    font-family: 'Roboto', sans-serif;
-    margin: 0px;
-    position: fixed;
+    box-shadow: 0 0 2vh 1vh rgba(60, 60, 60, 0.637);
+    margin: 0;
     top: 0;
     width: 100%;
     height: 10%;
@@ -27,75 +69,181 @@ header {
 }
 
 #headerRightContent {
-    margin-right: 30px;
+    margin-right: 2vw;
 }
 
-.navbarLinks {
+.navbarButton {
+    background-color: rgb(7, 85, 55);
     color: white;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: color 0.15s ease-in-out;
+    font-family: 'Chakra Petch', 'Tahoma', sans-serif;
+    font-size: 1.2rem;
+}
+
+.navbarButton:hover {
+    color: rgb(43, 43, 43);
 }
 
 #navbarTitle {
-    margin-left: 30px;
+    margin-left: 2vw;
 }
+
+
+
+/* Styling of home section contents */
 
 #home {
     height: 100vh;
     margin-top: 1%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), beige), url("/images/home_bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#homeContainer {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+}
+
+#homeCard {
+    display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 22.5vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    width: 70%;
+    height: 60%;
     background-image: url("/images/home_bg.png");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 0 2vh 0.25vh rgba(60, 60, 60, 0.5);
 }
 
 #faceImage {
     border-radius: 50%;
+    box-shadow: 0 0 2vh 0.5vh rgba(60, 60, 60, 0.5);
 }
 
 #homeColumn2 {
     display: flex;
     flex-direction: column;
     margin-left: 5vw;
-    width: 37.5%;
-    padding-top: 0;
+    width: 40%;
 }
 
 #homeTitle {
-    font-family: 'Chakra Petch', 'Roboto', sans-serif;
+    text-shadow: 0rem 0.2rem 0.75rem rgba(60, 60, 60, 0.5);
+    font-weight: bold;
     font-size: 5rem;
-    padding: 0;
     margin: 0;
 }
 
 #homeDescription {
-    font-family: 'Roboto', sans-serif;
-    text-wrap: balance;
+    text-wrap: wrap;
     font-size: 1.5rem;
     margin-bottom: 7%;
 }
 
-#mainContent {
-    background-color: rgba(128, 128, 128, 0.26);
-    padding: 75px;
+#homeLinks {
+    padding-right: 10%;
 }
+
+#homeColumn2Row3 {
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* Styling of about section */
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: beige;
+}
+
+#aboutColumn2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* About Me section */
+
+#aboutCard {
+    margin-right: 1.25vw;
+    background-color: white;
+}
+
+/* IT-skills section */
+
+#itSkillsCard {
+    margin-left: 1.25vw;
+    margin-bottom: 1.5vw;
+    background-color: white;
+}
+
+#itSkillsList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+itSkillItem {
+    background-color: rgb(7, 85, 55);
+    color: white;
+    box-shadow: 0 0 1vh 0 rgba(60, 60, 60, 0.5);
+    border-radius: 20px;
+    padding: 1%;
+    margin: 0.5%
+}
+
+/* Education section */
+
+#educationCard {
+    background-color: white;
+    margin-left: 1.25vw;
+}
+
+
+
+/* Styling of the projects section */
+
+#projects {
+    background-color: beige;
+    padding: 5%;
+}
+
+#projectsCard {
+    background-color: white;
+}
+
+
+
+/* Styling of footer contents */
 
 footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 7%;
-    padding-top: 4%;    
+    padding-top: 3%;
+    padding-bottom: 2%;
     color: white;
     background-color: rgba(0, 0, 0, 0.95);
+    box-shadow: 0 0 2vh 1vh rgba(60, 60, 60, 0.637);
 }
 
 #footerColumns {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
 #footerColumn1 {
@@ -112,7 +260,11 @@ footer {
     text-wrap: balance;
 }
 
+#footerLine {
+    width: 75vw;
+    padding: 5vh;
+}
+
 hr {
-    height: 0;
-    width: 80%;
+    color: white;
 }
