@@ -1,4 +1,4 @@
-# A single page portfolio website with vanilla JavaScript
+# A single page portfolio with vanilla JavaScript
 This project is my first complete web development project. 
 
 I decided to do this project because I wanted to get a good grasp of vanilla Javascript, HTML, and CSS, before delving deeper into more advanced frameworks. 
