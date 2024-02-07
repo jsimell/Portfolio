@@ -2,9 +2,9 @@
 function scrollToElement(elementId) {
     console.log(`scrollTo(${elementId}) called`)
     const element = document.getElementById(elementId);
-    const headerHeight = document.getElementById("header").getBoundingClientRect().bottom
+    const headerHeight = document.getElementById("header").getBoundingClientRect().bottom;
     if (element) {
-        const yPos = element.getBoundingClientRect().top + window.scrollY - headerHeight;
+        const yPos = element.getBoundingClientRect().top + window.scrollY - headerHeight - 60;
         window.scrollTo({
             top: yPos,
             behavior: 'smooth'
