@@ -1,270 +1,151 @@
+/* DEFAULT STYLES */
 
-/* Styling of basic elements*/
-
-html {
+html,
+body {
     scroll-behavior: smooth;
+    /* Set a default font for the entire document */
+    font-family: 'Chakra Petch', 'Tahoma', sans-serif;
+    /* Reset margins and padding for the entire document */
+    margin: 0;
+    padding: 0;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Chakra Petch', 'Tahoma', sans-serif;
+/* Make sure that margins and paddings are reset for
+   all the headings and paragraphs as well */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 5rem;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
+h3 {
+    font-size: 1.6rem;
+}
 
-
-/* Styling of classes used in multiple sections */
-
-.defaultButton {
-    width: 8vw;
-    height: 5.5vh;
-    border-radius: 10px; 
-    background-color: rgb(7, 85, 55);
-    color: white;
-    box-shadow: 0 0 1vh 0 rgba(60, 60, 60, 0.5);
-    border: none;
-    font-size: 1.2rem;
-    text-wrap: nowrap;
+button {
     cursor: pointer;
+    border: 2px solid #075537;
     transition: color 0.15s ease-in-out;
-}
-
-.defaultButton:hover {
-    color: rgb(7, 85, 55);
-    background-color: white;
-    border: 2px solid rgb(7, 85, 55);
-}
-
-
-
-/* Styling of header contents */
-
-header {
-    position: fixed;
-    z-index: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    border-radius: 0.5rem;
     background-color: rgb(7, 85, 55);
     color: white;
-    box-shadow: 0 0 2vh 1vh rgba(60, 60, 60, 0.637);
-    margin: 0;
-    top: 0;
-    width: 100%;
-    height: 10%;
-}
-
-#headerLeftContent {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-left: 1%;
-}
-
-#headerRightContent {
-    margin-right: 2vw;
-}
-
-.navbarButton {
-    background-color: rgb(7, 85, 55);
-    color: white;
-    border: none;
-    background: none;
-    cursor: pointer;
-    transition: color 0.15s ease-in-out;
     font-family: 'Chakra Petch', 'Tahoma', sans-serif;
     font-size: 1.2rem;
 }
 
-.navbarButton:hover {
-    color: rgb(43, 43, 43);
-}
-
-#navbarTitle {
-    margin-left: 2vw;
+button:hover {
+    color: rgb(7, 85, 55);
+    background-color: white;
 }
 
 
 
-/* Styling of home section contents */
+/* HEADER */
 
-#home {
-    height: 100vh;
-    margin-top: 1%;
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), beige), url("/images/home_bg.png");
-    background-size: cover;
-    background-position: center;
-}
-
-#homeContainer {
+header {
+    position: fixed;
     display: flex;
-    justify-content: center;
-}
-
-#homeCard {
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 22.5vh;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    width: 70%;
-    height: 60%;
-    background-image: url("/images/home_bg.png");
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0 0 2vh 0.25vh rgba(60, 60, 60, 0.5);
+    min-width: 100vw;
+    background-color: rgb(7, 85, 55);
+    color: white;
 }
 
-#faceImage {
-    border-radius: 50%;
-    box-shadow: 0 0 2vh 0.5vh rgba(60, 60, 60, 0.5);
-}
-
-#homeColumn2 {
-    display: flex;
-    flex-direction: column;
-    margin-left: 5vw;
-    width: 40%;
-}
-
-#homeTitle {
-    text-shadow: 0rem 0.2rem 0.75rem rgba(60, 60, 60, 0.5);
-    font-weight: bold;
-    font-size: 5rem;
-    margin: 0;
-}
-
-#homeDescription {
-    text-wrap: wrap;
-    font-size: 1.5rem;
-    margin-bottom: 7%;
-}
-
-#homeLinks {
-    padding-right: 10%;
-}
-
-#homeColumn2Row3 {
+.headerLeftContainer {
     display: flex;
     align-items: center;
+    gap: 1rem;
+    padding-left: 1rem;
+}
+
+.navMenu {
+    padding-right: 1rem;
+}
+
+.navMenuButton {
+    border: none;
+    background: none;
+    background-color: rgb(7, 85, 55);
+    color: white;
+}
+
+.navMenuButton:hover {
+    color: rgb(20, 20, 20);
+    background-color: rgb(7, 85, 55);
+    border: none;
 }
 
 
-
-/* Styling of about section */
-
-#about {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: beige;
-}
-
-#aboutColumn2 {
+/* MAIN CONTENT */
+.mainContent {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-}
-
-/* About Me section */
-
-#aboutCard {
-    margin-right: 1.25vw;
-    background-color: white;
-}
-
-/* IT-skills section */
-
-#itSkillsCard {
-    margin-left: 1.25vw;
-    margin-bottom: 1.5vw;
-    background-color: white;
-}
-
-#itSkillsList {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-itSkillItem {
-    background-color: rgb(7, 85, 55);
-    color: white;
-    box-shadow: 0 0 1vh 0 rgba(60, 60, 60, 0.5);
-    border-radius: 20px;
-    padding: 1%;
-    margin: 0.5%
-}
-
-/* Education section */
-
-#educationCard {
-    background-color: white;
-    margin-left: 1.25vw;
-}
-
-
-
-/* Styling of the projects section */
-
-#projects {
     background-color: beige;
-    padding: 5%;
 }
 
-#projectsCard {
+/* CARDS */
+.card {
+    margin-inline: 8%;
+    margin-block: 1rem;
     background-color: white;
+    box-shadow: 0 0 2vh 1vh rgba(60, 60, 60, 0.637);
+}
+
+/* HOME */
+.homeContainer {
+    background-image: linear-gradient(white, white, beige);
 }
 
 
 
-/* Styling of footer contents */
+
+/* FOOTER */
 
 footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 7%;
-    padding-top: 3%;
-    padding-bottom: 2%;
-    color: white;
+    min-height: 20vw;
     background-color: rgba(0, 0, 0, 0.95);
-    box-shadow: 0 0 2vh 1vh rgba(60, 60, 60, 0.637);
+    color: white;
 }
 
-#footerColumns {
+.footerSection1 {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 8vw;
+    padding-block: 2.5rem;
+    padding-inline: 20vw;
 }
 
-#footerColumn1 {
-    margin-left: 10%;
-    width: 50%;  
+.footerSection1 h2 {
+    padding-bottom: 0.8rem;
 }
 
-#footerColumn2 {
-    margin-right: 10%;
-}
-
-
-#footerDescription {
+.footerDescription {
+    max-width: 50%;
+    min-width: 250px;
     text-wrap: balance;
 }
 
-#footerLine {
-    width: 75vw;
-    padding: 5vh;
-}
-
 hr {
+    min-width: 80vw;
     color: white;
 }
