@@ -4,7 +4,7 @@
 <head>
   <title>Jiri Simell</title>
   <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
-  <link rel="stylesheet" type="text/css" href="css/styles_v2.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -15,24 +15,22 @@
     <include src="templates/header.html"></include>
   </header>
 
-  <section class="flexColumn mainContent">
-    <div class="flexRow homeContainer">
+  <section class="mainContent">
+    <div class="homeContainer">
       <include src="templates/home.html"></include>
     </div>
-    <div class="flexRow aboutContainer">
-      <div id="aboutMeContainer">
-        <include src="templates/about.html"></include>
+    <div class="aboutContainer">
+      <div class="introductionContainer">
+        <include src="templates/introduction.html"></include>
       </div>
-      <div class="container">
-        <div id="itSkillsContainer">
-          <include src="templates/itSkills.html"></include>
-        </div>
-        <div id="educationContainer">
-          <include src="templates/education.html"></include>
-        </div>
+      <div class="itSkillsContainer">
+        <include src="templates/itSkills.html"></include>
+      </div>
+      <div class="educationContainer">
+        <include src="templates/education.html"></include>
       </div>
     </div>
-    <div id="projectsContainer">
+    <div class="projectsContainer">
       <include src="templates/projects.html"></include>
     </div>
   </section>
