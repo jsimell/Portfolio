@@ -24,7 +24,7 @@ p {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
 }
 
 h2 {
@@ -37,18 +37,9 @@ h3 {
 
 button {
     cursor: pointer;
-    border: 2px solid #075537;
     transition: color 0.15s ease-in-out;
-    border-radius: 0.5rem;
-    background-color: rgb(7, 85, 55);
-    color: white;
     font-family: 'Chakra Petch', 'Tahoma', sans-serif;
     font-size: 1.2rem;
-}
-
-button:hover {
-    color: rgb(7, 85, 55);
-    background-color: white;
 }
 
 
@@ -57,19 +48,26 @@ button:hover {
 
 header {
     position: fixed;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-width: 100vw;
-    background-color: rgb(7, 85, 55);
-    color: white;
+    min-height: 100px;
+    background-color: #191919;
+    color: #d1d1d1;
 }
 
 .headerLeftContainer {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     padding-left: 1rem;
+}
+
+.topLeftImage {
+    margin: 10%;
+    border-radius: 50%;
 }
 
 .navMenu {
@@ -79,39 +77,98 @@ header {
 .navMenuButton {
     border: none;
     background: none;
-    background-color: rgb(7, 85, 55);
-    color: white;
+    color: #d1d1d1;
 }
 
 .navMenuButton:hover {
-    color: rgb(20, 20, 20);
-    background-color: rgb(7, 85, 55);
+    color: #085035;
+    background-color: transparent;
     border: none;
 }
 
 
 /* MAIN CONTENT */
-.mainContent {
+#mainContent {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: beige;
-}
-
-/* CARDS */
-.card {
-    margin-inline: 8%;
-    margin-block: 1rem;
-    background-color: white;
-    box-shadow: 0 0 2vh 1vh rgba(60, 60, 60, 0.637);
+    align-items: center;
+    background-color: #101010;
 }
 
 /* HOME */
-.homeContainer {
-    background-image: linear-gradient(white, white, beige);
+#homeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    max-height: 80rem;
+    background-image: linear-gradient(transparent, transparent, transparent, #101010), url("/images/dark-bg.png");
+    background-size: cover;
+}
+
+.homeCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    color: #d1d1d1;
+}
+
+.homeSection1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 80%;
+}
+
+.homeCard p {
+    max-width: 50rem;
+    padding-top: 1.5rem;
+    text-wrap: balance;
+    font-size: 1.4rem;
+}
+
+.faceImage {
+    border-radius: 50%;
+    max-width: 80%;
+    height: auto;
+    padding-block: 4rem;
+}
+
+.aboutMeButton {
+    background-color: #0A3223;
+    color: #d1d1d1;
+    border: 2px solid #0A3223;
+    border-radius: 8px;
+    min-height: 50px;
+    margin-top: 3.1rem;
+    max-width: 200px;
+}
+
+.aboutMeButton:hover {
+    background-color: #0B412F;
+    border: 2px solid #0B412F;
+    color: #d1d1d1;
 }
 
 
+/* CARDS */
+.card {
+    margin-inline: 6%;
+    padding-inline: 2rem;
+    padding-block: 1.2rem;
+    margin-block: 1rem;
+    background-color: #191919;
+    border-radius: 8px;
+    color: #d1d1d1;
+}
+
+/* ABOUT ME CARD */
+#aboutContainer {
+
+}
 
 
 /* FOOTER */
@@ -122,7 +179,7 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     min-height: 20vw;
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: #191919;
     color: white;
 }
 
