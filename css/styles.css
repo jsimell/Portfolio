@@ -8,6 +8,7 @@ body {
     /* Reset margins and padding for the entire document */
     margin: 0;
     padding: 0;
+    background-color: #101010;
 }
 
 /* Make sure that margins and paddings are reset for
@@ -158,15 +159,30 @@ header {
 .card {
     margin-inline: 6%;
     padding-inline: 2rem;
-    padding-block: 1.2rem;
+    padding-top: 1.2rem;
+    padding-bottom: 2rem;
     margin-block: 1rem;
     background-color: #191919;
     border-radius: 8px;
     color: #d1d1d1;
 }
 
-/* ABOUT ME CARD */
-#aboutContainer {
+.card h2 {
+    padding-bottom: 1.5rem;
+}
+
+/* IT SKILLS */
+.itSkillsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.itSkillsList itSkill {
+    background-color: #0A3223;
+    padding: 0.8rem;
+    border-radius: 20px;
 
 }
 
@@ -178,9 +194,10 @@ footer {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 5rem;
     min-height: 20vw;
     background-color: #191919;
-    color: white;
+    color: #d1d1d1;
 }
 
 .footerSection1 {
@@ -204,5 +221,5 @@ footer {
 
 hr {
     min-width: 80vw;
-    color: white;
+    color: #d1d1d1;
 }
