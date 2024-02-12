@@ -35,6 +35,10 @@ h3 {
     font-size: 1.6rem;
 }
 
+h4 {
+    font-size: 1.2rem;
+}
+
 button {
     cursor: pointer;
     transition: color 0.15s ease-in-out;
@@ -166,7 +170,7 @@ header {
 }
 
 .card h2 {
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
 }
 
 
@@ -186,15 +190,36 @@ header {
 }
 
 
+/* EDUCATION */
+.educationList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.graduationDate {
+    margin-bottom: 0.75rem;
+    padding-block: 0.2rem;
+    padding-inline: 0.3rem;
+    background-color: #0A3223;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.degree h4 {
+    padding-left: 0.2rem;
+}
+
+.degree ul {
+    margin-top: 0.5rem;
+}
+
+
 /* PROJECTS */
 .projectsCard {
     display: flex;
     flex-direction: column;
     padding-bottom: 0; /* padding-bottom of .project takes care of this */
-}
-
-.projectsCard h2 {
-    padding-bottom: 3rem;
 }
 
 .project {
