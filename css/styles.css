@@ -1,5 +1,4 @@
 /* DEFAULT STYLES */
-
 html,
 body {
     scroll-behavior: smooth;
@@ -43,10 +42,23 @@ button {
     font-size: 1.2rem;
 }
 
+.defaultButton {
+    min-height: 50px;
+    max-width: 200px;
+    margin-top: 3.1rem;
+    background-color: #0A3223;
+    border: 1px solid #0A3223;
+    border-radius: 8px;
+    color: #d1d1d1;
+}
+
+.defaultButton:hover {
+    background-color: #0B412F;
+    border: 1px solid #d1d1d1;
+}
 
 
 /* HEADER */
-
 header {
     position: fixed;
     z-index: 1;
@@ -57,6 +69,7 @@ header {
     min-height: 100px;
     background-color: #191919;
     color: #d1d1d1;
+    box-shadow: 0 2px 4px #101010;
 }
 
 .headerLeftContainer {
@@ -96,6 +109,7 @@ header {
     align-items: center;
     background-color: #101010;
 }
+
 
 /* HOME */
 #homeContainer {
@@ -138,22 +152,6 @@ header {
     padding-block: 4rem;
 }
 
-.aboutMeButton {
-    background-color: #0A3223;
-    color: #d1d1d1;
-    border: 2px solid #0A3223;
-    border-radius: 8px;
-    min-height: 50px;
-    margin-top: 3.1rem;
-    max-width: 200px;
-}
-
-.aboutMeButton:hover {
-    background-color: #0B412F;
-    border: 2px solid #0B412F;
-    color: #d1d1d1;
-}
-
 
 /* CARDS */
 .card {
@@ -171,6 +169,7 @@ header {
     padding-bottom: 1.5rem;
 }
 
+
 /* IT SKILLS */
 .itSkillsList {
     display: flex;
@@ -184,6 +183,39 @@ header {
     padding: 0.8rem;
     border-radius: 20px;
 
+}
+
+
+/* PROJECTS */
+.projectsCard {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0; /* padding-bottom of .project takes care of this */
+}
+
+.projectsCard h2 {
+    padding-bottom: 3rem;
+}
+
+.project {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap-reverse;
+    gap: 2rem;
+    padding-bottom: 3rem;
+}
+
+.projectDescription {
+    flex: 1 1 55%;
+}
+
+.projectDescription h3 {
+    padding-bottom: 1rem;
+}
+
+.projectImage {
+    max-width: 100%;
+    height: auto;
 }
 
 
