@@ -4,7 +4,6 @@ async function handler(req) {
     const url = new URL(req.url);
     const path = url.pathname;
     const filename = path.split("/").pop();
-    const directory = path.slice(0, path.lastIndexOf("/") + 1);
 
     if (method !== "GET") {
         return new Response(`Method '${method}' not allowed`, { status: 405 })
@@ -24,7 +23,7 @@ async function handler(req) {
     try {
         if (path === "/") {
             file = await Deno.readFile(`${Deno.cwd()}/index.html`);
-            return new Response(htmlContent, { headers: { "content-type": "text/html; charset=utf-8" }});
+            return new Response(file, { headers: { "content-type": "text/html; charset=utf-8" }});
         } else {
             file = await Deno.readFile(`${Deno.cwd()}${path}`);
             /* The following extracts the file extension from the filename and chooses the correct header 
