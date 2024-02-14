@@ -9,7 +9,7 @@ Furthermore, I improved my HTML skills, learned about creating dynamic functiona
 \
 ![portfolio_demo](https://github.com/jsimell/Portfolio/assets/96237825/2bc798dc-5778-4179-9af7-c4583eab668f)
 
-## Running the website on your browser
+## Using the website on your browser
 
 **You can access the website in this repo in your browser by following these simple steps:**
 1. Install the Deno runtime by following the instrctions at: https://docs.deno.com/runtime/manual/getting_started/installation.
