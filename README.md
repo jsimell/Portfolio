@@ -8,7 +8,6 @@ For a long time, front-end development has seemed interesting to me, because I l
 
 \
 ![portfolio_demo](https://github.com/jsimell/Portfolio/assets/96237825/2bc798dc-5778-4179-9af7-c4583eab668f)
-\
 
 ## Running the website on your browser
 
