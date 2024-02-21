@@ -17,4 +17,4 @@ Furthermore, I improved my HTML skills, learned about creating dynamic functiona
      - or by downloading the contents manually using the GitHub user interface
 4. After downloading the contents, navigate to the root folder of the project in the command line.
 5. In the root folder, run the command: `deno run --allow-net --allow-read app.js`.
-6. After this, you can access the website in your browser at the address http://localhost:8000.
+6. After this, you should be able to access the website in your browser at the address http://localhost:8000.
