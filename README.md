@@ -11,7 +11,7 @@ Furthermore, I improved my HTML skills, learned about creating dynamic functiona
 ## Using the website on your browser
 
 **You can use the website in your own browser by following these simple steps:**
-1. Install the Deno runtime by following the instrctions at: https://docs.deno.com/runtime/manual/getting_started/installation.
+1. Install the Deno runtime by following the instructions at: https://docs.deno.com/runtime/manual/getting_started/installation.
 2. Clone the contents from this repository to your local machine:
      - from the command line with git: `git clone git@github.com:jsimell/Portfolio.git`
      - or by downloading the contents manually using the GitHub user interface
