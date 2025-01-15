@@ -2,6 +2,8 @@
 
 # A single page portfolio with vanilla technologies
 
+**EDIT** (Jan 2025): As I am now looking at the website a year later, I don't feel completely satisfied with some aspects of it. For example, the aesthetics of the landing page could be improved by changing e.g. its background and the layout of the elements.
+
 This repository contains a simple portfolio website implemented with vanilla JavaScript, HTML, and CSS. My aim with this project was to learn front-end development with the basic web technologies, before delving deeper into more advanced development frameworks. Furthermore, I wanted to do this project to learn how a simple website can be constructed from scratch. 
 
 The topic I learned the most about during this project was probably CSS. For example, I learned how to use the flexbox layout model and formed a basic understanding of the grid layout as well. Additionally, I learned what must be done to achieve a responsive website design.
