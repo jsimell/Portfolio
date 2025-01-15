@@ -1,8 +1,9 @@
+**EDIT (Jan 2025):** As I am now looking at the website a year later, I don't feel completely satisfied with some aspects of it. For example, the aesthetics of the landing page could be improved by changing e.g. its background and the layout of the elements.
+<br><br>
+
 ![portfolio_demo](https://github.com/jsimell/Portfolio/assets/96237825/2bc798dc-5778-4179-9af7-c4583eab668f)
 
 # A single page portfolio with vanilla technologies
-
-**EDIT** (Jan 2025): As I am now looking at the website a year later, I don't feel completely satisfied with some aspects of it. For example, the aesthetics of the landing page could be improved by changing e.g. its background and the layout of the elements.
 
 This repository contains a simple portfolio website implemented with vanilla JavaScript, HTML, and CSS. My aim with this project was to learn front-end development with the basic web technologies, before delving deeper into more advanced development frameworks. Furthermore, I wanted to do this project to learn how a simple website can be constructed from scratch. 
 
