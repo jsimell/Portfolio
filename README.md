@@ -3,7 +3,7 @@
 
 ![portfolio_demo](https://github.com/jsimell/Portfolio/assets/96237825/2bc798dc-5778-4179-9af7-c4583eab668f)
 
-![design responsiveness demo](https://github.com/user-attachments/assets/5f1ffd2e-dd23-41bf-a291-fa47afde1cca)
+![Click here for a video displaying the responsiveness of the design](https://github.com/user-attachments/assets/5f1ffd2e-dd23-41bf-a291-fa47afde1cca)
 
 # A single page portfolio with vanilla technologies
 
