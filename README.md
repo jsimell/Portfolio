@@ -1,4 +1,4 @@
-**EDIT (Jan 2025):** As I am now looking at the website a year later, I don't feel completely satisfied with some aspects of it. For example, the aesthetics of the landing page could be improved by changing e.g. its background and the layout of the elements.
+**EDIT (Jan 2025):** As I am now looking at the website a year later, I don't feel completely satisfied with some aspects of it. For example, the aesthetics of the landing page could be improved by changing e.g. its background and the layout of the elements. Additionally, another issue is that the cards may not be visible for people using a lower screen brightness.
 <br><br>
 
 ![portfolio_demo](https://github.com/jsimell/Portfolio/assets/96237825/2bc798dc-5778-4179-9af7-c4583eab668f)
