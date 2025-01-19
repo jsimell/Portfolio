@@ -12,7 +12,7 @@ This repository contains a simple portfolio website implemented with vanilla Jav
 
 The topic I learned the most about during this project was probably CSS. For example, I learned how to use the flexbox layout model and formed a basic understanding of the grid layout as well. Additionally, I learned what must be done to achieve a responsive website design.
 
-Furthermore, I improved my HTML skills, learned about creating dynamic functionality into a website with JS scripts, and understood the basics of choosing good website colors and their ratio. 
+I also improved my HTML skills, learned about creating dynamic functionality into a website with JS scripts, and understood the basics of choosing UI colors and their ratio. 
 
 ## Using the website on your browser
 
